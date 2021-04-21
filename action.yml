@@ -1,6 +1,6 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
+name: 'Ruby Review Action'
+description: 'Hello World with Container Action'
+author: '@shmeadyy'
 inputs: 
   myInput:
     description: 'Input to use'
