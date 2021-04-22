@@ -31,3 +31,4 @@ jobs:
         run: bundle exec rake
 
       - uses: shmeadyy/ruby-review@main
+        with: ${{ secrets.GITHUB_TOKEN }}
