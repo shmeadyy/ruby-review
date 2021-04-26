@@ -1,12 +1,12 @@
 name: 'Ruby Review Action'
-description: 'Hello World with Container Action'
+description: 'Container Action to check files in a repo'
 author: '@shmeadyy'
 inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+  token:
+    description: 'OAuth Token to Use for GH'
+    default: null
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ secrets.GITHUB_TOKEN }}
+    - inputs.token
